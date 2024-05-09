@@ -1,0 +1,42 @@
+.cover-picture{
+    width: 100%;
+}
+
+.cover-div{
+    width: 100%;
+    position: relative;
+   
+
+}
+
+.overlay{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.55);
+    right: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.greet{
+    text-align: center;
+    position: absolute;
+    right: 43%;
+    top: 44%;
+    font-size: 2vw;
+    color: white;
+    font-weight: lighter;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.name{
+    position: absolute;
+    right: 20%;
+    top: 50%;
+    color: white;
+    font-size: 8vw;
+    font-weight: bolder;
+    text-align: center;
+    align-items: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}

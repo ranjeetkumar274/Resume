@@ -1,184 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
+
+    <link rel="Stylesheet" href="Styles/header.css">
+    <link rel="Stylesheet" href="Styles/Home.css">
+    <link rel="Stylesheet" href="Styles/Resume.css">
+    <link rel="Stylesheet" href="Styles/general.css">
+    <link rel="Stylesheet" href="Styles/skills.css">
+    <link rel="Stylesheet" href="Styles/projects.css">
+    <link rel="Stylesheet" href="Styles/contact-us.css">
+    <link rel="Stylesheet" href="Styles/footer.css">
+    <script src="script.js" defer></script>
 </head>
-
-<style>
-    .body{
-        margin: 0;
-        height: 1000px;
-        background-color: rgb(138, 138, 138);
-    }
-
-    .swipe-down {
-    animation: swipeDown 0.5s ease forwards;
-  }
-
-
-  @keyframes swipeDown {
-    from {
-      transform: translateY(-100%);
-    }
-    to {
-      transform: translateY(0);
-    }
-  }
-
-    .header{
-        display: flex;
-        justify-content: center;
-        position: fixed;
-       /* background-color: rgb(62, 62, 62); */
-        right: 0;
-        top: 0px;
-        left: 0;
-        height: 50px;
-    }
-
-    .header-button-box{
-        margin-right: 50px;
-        margin-top: 11px;
-    }
-    .header-button-bo{
-        margin-top: 11px;
-    }
-
-    .header-button{
-        background:none;
-        color: white;
-        border: none;
-        font-size: 1.2vw;
-        cursor: pointer;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-
-    .header-button:hover{
-        background-color: rgb(254, 254, 254);
-        color: rgb(60, 60, 60);
-        margin: 2px;
-        padding: 4px;
-        font-size:1.5vw;
-        border-radius: 3px;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-
-    .cover-picture{
-        width: 100%;
-    }
-
-    .cover-div{
-        width: 100%;
-        position: relative;
-       
-
-    }
-
-    .overlay{
-        position: absolute;
-        background-color: rgba(0, 0, 0, 0.55);
-        right: 0;
-        top: 0;
-        left: 0;
-        bottom: 0;
-    }
-
-    .greet{
-        text-align: center;
-        position: absolute;
-        right: 43%;
-        top: 44%;
-        font-size: 2vw;
-        color: white;
-        font-weight: lighter;
-        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
-    }
-
-    .name{
-        position: absolute;
-        right: 20%;
-        top: 50%;
-        color: white;
-        font-size: 8vw;
-        font-weight: bolder;
-        text-align: center;
-        align-items: center;
-        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
-    }
-
-    .resume-section{
-        height: 52vw;
-        background-color: rgb(62, 62, 62);
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        
-    }
-
-    .edu-box{
-        background-color: grey;
-        height: 42vw;
-        margin-top: 4vw;
-        width: 85vw;
-        border-radius: 1.9vw;
-        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
-        transition: transform 0.3s ease;
-        display: grid;
-    }
-
-    .course-container{
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .graduation{
-        margin-left : 3vw;
-        margin-top: 2vw;
-    }
-
-    .course{
-        font-size: 2vw;
-        font-weight: bolder;
-        font-family: Arial, Helvetica, sans-serif;
-        margin-bottom: 0;
-        margin-right: 6vw;
-    }
-
-    .college{
-        font-size: 1.5vw;
-        margin-top : 0.5vw;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-
-    .skills-section{
-        height: 58vw;
-        background-color: rgb(212, 230, 173);
-    }
-
-    .projects-section{
-        height: 58vw;
-        background-color: rgb(230, 173, 204);
-    }
-
-    .contact-section{
-        height: 58vw;
-        background-color: rgb(230, 197, 173);
-    }
-
-    .footer-section{
-        height: 58vw;
-        background-color: rgb(230, 173, 173);
-    }
-</style>
 
 <body class="body">
     
-
     <section id="Home" class="swipe-up">
         <div class="cover-div" >
-            <img class="cover-picture" src="IMG_20240504_213232.jpg">
+            <img class="cover-picture" src="img/IMG_20240504_213232.jpg">
             <div class="overlay"></div>  
             <div class="greet">Hello I'm</div>
             <div class="name">Ranjeet Kumar</div>
@@ -221,11 +64,13 @@
         </div>
     </section>
 
+
     <section id="Skills" class="swipe-up">
         <div class="skills-section">
 
         </div>
     </section>
+
 
     <section id="Projects">
         <div class="projects-section">
@@ -233,12 +78,14 @@
         </div>
     </section>
 
+
     <section id="Contact-us">
         <div class="contact-section">
 
         </div>
     </section>
 
+    
     <section id="Contact-us">
         <div class="footer-section">
 
@@ -283,26 +130,6 @@
         </div>
     </a>
     </diV>
-
-    <script>
-        function navigateToSection(sectionId) {
-          const section = document.getElementById(sectionId);
-          if (section) {
-            // Remove swipe-down animation class from all sections
-            document.querySelectorAll('section').forEach(sec => {
-              sec.classList.remove('swipe-down');
-            });
-    
-            // Add swipe-down animation class to the target section
-            section.classList.add('swipe-down');
-    
-            // Scroll to the section after the animation completes
-            setTimeout(() => {
-              section.scrollIntoView({ behavior: 'smooth' });
-            }, 500); // 500ms is the duration of the animation
-          }
-        }
-      </script>
 
 </body>
 </html>

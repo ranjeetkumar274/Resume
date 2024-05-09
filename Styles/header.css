@@ -1,0 +1,37 @@
+.header{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+   /* background-color: rgb(62, 62, 62); */
+    right: 0;
+    top: 0px;
+    left: 0;
+    height: 50px;
+}
+
+.header-button-box{
+    margin-right: 50px;
+    margin-top: 11px;
+}
+.header-button-bo{
+    margin-top: 11px;
+}
+
+.header-button{
+    background:none;
+    color: white;
+    border: none;
+    font-size: 1.2vw;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header-button:hover{
+    background-color: rgb(254, 254, 254);
+    color: rgb(60, 60, 60);
+    margin: 2px;
+    padding: 4px;
+    font-size:1.5vw;
+    border-radius: 3px;
+    font-family: Arial, Helvetica, sans-serif;
+}
